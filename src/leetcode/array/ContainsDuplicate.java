@@ -16,7 +16,7 @@ public class ContainsDuplicate {
      * Space Complexity: O(n) we are creating a set with n number of elements
      * */
     public static boolean containsDuplicate(int[] nums) {
-        Set<Integer> numbers = new HashSet<>(nums.length, 0.75f);
+        Set<Integer> numbers = new HashSet<>(nums.length, 1f);
         for(int num: nums){
             numbers.add(num);
         }
